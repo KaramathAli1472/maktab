@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "154956173380",
+    "firebase_url": "https://yameen-5818e-default-rtdb.firebaseio.com",
+    "project_id": "yameen-5818e",
+    "storage_bucket": "yameen-5818e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154956173380:android:f84af5d30ec2df6417ec11",
+        "android_client_info": {
+          "package_name": "com.maktabe.sidratul.muntaha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLB9F9C1FdDWPeeQQCkIoFLP5U_34J5OI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

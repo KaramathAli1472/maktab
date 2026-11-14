@@ -1,0 +1,124 @@
+name: maktab_e_sidratul_muntaha
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.1+14
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^5.1.0
+  cloud_firestore: ^7.1.0
+  cached_network_image: ^3.4.1
+  flutter_tts: ^4.2.2
+  just_audio: ^0.10.0
+  marquee: ^2.3.0
+  youtube_player_iframe: ^6.0.2
+  webview_flutter: ^4.2.2
+  #  webview_flutter_android: ^4.3.4
+  wakelock_plus: ^1.2.11
+  photo_view: ^0.15.0
+  intl: ^0.20.2
+  hijri: ^3.0.0
+  geolocator: ^14.0.0
+  http: ^1.3.0
+  permission_handler: ^11.4.0
+  google_fonts: ^8.2.1
+  flutter_localizations:
+    sdk: flutter  # For RTL and localization support
+  flutter_pdfview: ^1.4.0+1
+  flutter_cached_pdfview: ^0.4.3
+  path_provider: ^2.1.5
+  dio: ^5.8.0+1
+  url_launcher: ^6.3.1
+  flutter_compass: ^0.8.1
+  vibration: ^3.1.3
+  flutter_local_notifications: ^22.3.1
+  firebase_auth: ^7.0.1
+  firebase_messaging: ^17.0.1
+  firebase_analytics: ^13.0.1
+  timezone: ^0.11.1
+  hijri_calendar: ^1.0.7+7
+  adhan: ^2.0.0+1
+  table_calendar: ^3.1.3
+  font_awesome_flutter: ^11.0.0
+  shared_preferences: ^2.5.3
+  easy_localization: ^3.0.3
+  share_plus: ^13.3.1
+  signature: ^6.3.0
+  video_player: ^2.10.0
+  chewie: ^1.11.3
+  android_alarm_manager_plus: ^5.1.2
+  android_intent_plus: ^6.1.0
+  package_info_plus: ^10.2.2
+  camera: ^0.12.0+2
+  flutter_webrtc: ^1.2.1
+  
+  
+  
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/image.png
+    - assets/logo.png
+    - assets/compass.png
+    - assets/audio/alarm_sound.mp3
+    - assets/audio/azan_default.mp3
+    - assets/audio/azan_2.mp3
+    - assets/audio/azan_3.mp3
+    - assets/fonts/
+    - assets/langs/  # <<< Localization JSON files go here
+    - assets/langs/en.json
+    - assets/langs/ur.json
+    - assets/langs/hi.json
+    - assets/langs/ar.json
+    - assets/langs/fa.json
+    - assets/app_version.json
+  fonts:
+    - family: AlMushafQuran
+      fonts:
+        - asset: assets/fonts/Al Mushaf Quran.ttf
+
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
+
+    - family: JameelNooriNastaleeq
+      fonts:
+        - asset: assets/fonts/Jameel Noori Nastaleeq Regular.ttf
+
+    - family: AlMushafQuran
+      fonts:
+        - asset: assets/fonts/Al Mushaf Quran.ttf
+
+    - family: KFGQPC Uthman
+      fonts:
+        - asset: assets/fonts/KFGQPC Uthman Taha Naskh Bold.ttf
+
+    - family: QuranJuzUthman
+      fonts:
+        - asset: assets/fonts/KFGQPC Uthman Taha Naskh Regular.ttf
+        - asset: assets/fonts/KFGQPC Uthman Taha Naskh Bold.ttf
+          weight: 700
+
+    - family: AlQalamQuran
+      fonts:
+        - asset: assets/fonts/Al Qalam Quran.ttf
+
+    - family: SaleemQuran
+      fonts:
+        - asset: assets/fonts/Saleem_QuranFont_shipped.ttf
