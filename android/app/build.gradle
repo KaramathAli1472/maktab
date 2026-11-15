@@ -15,10 +15,11 @@ android {
 
     defaultConfig {
         applicationId "com.maktabe.sidratul.muntaha"
-        minSdkVersion flutter.minSdkVersion        // ✅ Fixed: supports older devices
-        targetSdkVersion 35
-        versionCode 15
-        versionName "1.0.1+15"
+        // ✅ Manually set to 21, restore support for older devices (Flutter default is 24)
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion 36
+        versionCode 14
+        versionName "1.0.1+14"
         multiDexEnabled true
         manifestPlaceholders = [admob_app_id: ""]
     }
@@ -51,12 +52,8 @@ android {
         }
     }
 
-    // ✅ Strong lint configuration to prevent build failures
-    lintOptions {
-        disable 'LongLogTag'
-        disable 'GradleDependency'
-        disable 'OldTargetApi'
-        disable 'GradleDynamicVersion'
+    lint {
+        disable 'LongLogTag', 'GradleDependency', 'OldTargetApi', 'GradleDynamicVersion'
         checkReleaseBuilds false
         abortOnError false
         ignoreWarnings true

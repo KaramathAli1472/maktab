@@ -13,14 +13,9 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-
-    <!-- Optional Camera & Microphone for live classes -->
-    <uses-permission android:name="android.permission.CAMERA" tools:node="remove" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" tools:node="remove" />
 
     <!-- ❌ Remove Advertising ID -->
     <uses-permission
@@ -31,7 +26,6 @@
         android:label="Maktab-e-Sidratul Muntaha"
         android:icon="@mipmap/ic_launcher"
         android:allowBackup="true"
-        android:enableOnBackInvokedCallback="true"
         android:theme="@style/LaunchTheme">
 
         <!-- Flutter config -->
@@ -79,11 +73,11 @@
             </intent-filter>
         </service>
 
-        <!-- Foreground Azan Service -->
+        <!-- Foreground Azan Service (sirf mediaPlayback kaafi hai) -->
         <service
             android:name=".AzanService"
             android:exported="false"
-            android:foregroundServiceType="mediaPlayback|specialUse" />
+            android:foregroundServiceType="mediaPlayback" />
 
         <!-- File provider -->
         <provider
@@ -128,4 +122,3 @@
         </intent>
     </queries>
 </manifest>
-
